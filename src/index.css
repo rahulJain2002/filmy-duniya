@@ -13,10 +13,14 @@ body {
 }
 
 .card-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    /* border: 2px solid red; */
+    /* display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap; */
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust the minmax values as needed */
+    gap: 15px; /* Adjust the gap between items */
+    justify-content: space-evenly;
 }
 
 .card-container a {
@@ -54,6 +58,18 @@ body {
 }
 
 
+.search-container{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.loader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
 
 
 @media screen and (max-width: 460px) {
